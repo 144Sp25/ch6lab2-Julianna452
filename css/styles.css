@@ -1,6 +1,6 @@
 /*
-Author: Maria Cruz
-Date: Current Date
+Author: Julianna Lawrence
+Date: March 18th, 2025
 File Name: styles.css
 */
 
@@ -139,4 +139,75 @@ footer {
 footer a {
     color: #f6eee4;
     text-decoration: none;
+}
+
+/* Media Query for Tablet Viewport */
+@media screen and (min-width: 620px), print {
+
+/* Tablet Viewport: Show tab-desk class, hide mobile class */
+    .tab-desk {
+        display: block;
+    }
+    
+    .mobile {
+        display: none;
+    }
+    
+/* Tablet Viewport: Show rules for nav area */
+    nav li {
+        border-top: none;
+        display: inline-block;
+        font-size: 1.25em;
+    }
+    
+    nav li a {
+        padding: 0.5em;
+    }
+}
+
+/* Media Query for Large Desktop Viewports */
+@media screen and (min-width: 1921px), print {
+    body {
+        background: linear-gradient (#f6eee4,#78593a);
+    }
+    
+    #wrapper {
+        width: 1920px;
+        margin: 0, auto, 0, auto;
+    }
+    
+    main {
+        background-color: #f6eee4;
+    }
+}
+
+/* Media Query for Print */
+@media screen and (min-width: 1000px), print {
+    body {
+        background-color: white;
+        font: black;
+    }
+}
+
+/* Media Query for Desktop Viewports */
+@media screen and (min-width: 1000px), print {
+    
+/* Desktop Viewpoint: Style Rules for nav area */
+    nav li {
+        font-size: 1.5em;
+    }
+    
+    nav li a {
+        padding: 0.5em, 1.5em, 0.5em, 1.5em;
+    }
+    
+    nav li a:hover {
+        color: #2a1f14;
+        background-color: #f6eee4;
+    }
+    
+/* Desktop Viewpoint: Style Rules for main content */
+    #info ul {
+        margin-left: 5%;
+    }
 }
